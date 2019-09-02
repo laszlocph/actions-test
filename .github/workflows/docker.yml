@@ -1,0 +1,13 @@
+name: Dockwe build
+on: [push]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Debug
+      run: |
+        echo hello
+        docker
