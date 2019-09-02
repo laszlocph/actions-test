@@ -17,6 +17,6 @@ jobs:
         docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
         docker build -t laszlocloud/actions-test .
         docker push laszlocloud/actions-test
-      with:
+      env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
