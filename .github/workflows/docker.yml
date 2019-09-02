@@ -7,6 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Debug
+    - name: Checkout
+      uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+
+    - name: Docker build
       run: |
         docker build -t laszlocloud/actions-test .
