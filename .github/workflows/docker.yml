@@ -9,5 +9,4 @@ jobs:
 
     - name: Debug
       run: |
-        echo hello
-        docker
+        docker build -t laszlocloud/actions-test .
